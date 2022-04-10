@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- <script>
+const obj1 = new Promise((resolve, reject)=>{
+
+let req= true;
+if(req==true){
+    resolve("request accepted")
+
+}else{
+    reject("reuest rejected")
+}
+
+})
+obj1.then(
+(value)=>{ console.log(value); },
+(error)=>{console.log(error)}
+
+)
+
+
+    </script> -->
+    <script>
+
+// promise
+
+let obj = new Promise((resolve, reject)=>{
+    let req = true;
+    if(req ==true){
+        resolve("req accpted")
+
+    }else{
+        reject("req rejected")
+    }
+
+})
+obj.then((value)=>{
+    console.log(value)
+}).catch((error)=>{
+    console.log(error);
+})
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>
